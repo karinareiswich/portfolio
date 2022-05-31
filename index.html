@@ -19,19 +19,22 @@
         <header>
             <div class="container">
                 <nav class="navigation">
+                    <button class="burger__menu" onclick="openModal()"></button>
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            <a href="#">Главная</a>
+                            <a href="#box">Главная</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#">Обо мне</a>
-                        </li>
-                        <li class="navigation__item"><a href="#">Навыки</a></li>
-                        <li class="navigation__item">
-                            <a href="#">Портфолио</a>
+                            <a href="#about">Обо мне</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#">Контакты</a>
+                            <a href="#skills">Навыки</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#portfolio">Портфолио</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -39,7 +42,7 @@
         </header>
         <main>
             <section>
-                <div class="container">
+                <div id="box" class="container">
                     <div class="box">
                         <div class="box__name">
                             <h1>
@@ -54,7 +57,7 @@
                             </p>
                         </div>
                         <div>
-                            <a href="#" class="box__arrow"></a>
+                            <a href="#portfolio" class="box__arrow scroll"></a>
                         </div>
                     </div>
                     <div class="box__img">
@@ -68,7 +71,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section id="about" class="about">
                 <div class="wrapper">
                     <div class="about__title title">
                         <h2>Обо мне</h2>
@@ -94,7 +97,7 @@
                 </div>
             </section>
             <section class="skills">
-                <div class="container">
+                <div id="skills" class="container">
                     <div class="skills__title title">
                         <h2>Навыки</h2>
                     </div>
@@ -127,7 +130,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section id="portfolio" class="portfolio">
                 <div class="portfolio__title title">
                     <h2>Портфолио</h2>
                 </div>
@@ -141,7 +144,9 @@
                             height="820"
                         />
                     </div>
-                    <a class="portfolio__link" href="#"
+                    <a
+                        class="portfolio__link"
+                        href="https://karinareiswich.github.io/gym/index.html"
                         >Адаптивный сайт для услуг небольшой фитнес студии.</a
                     >
                     <div class="portfolio__wrapp">
@@ -153,7 +158,9 @@
                             height="820"
                         />
                     </div>
-                    <a class="portfolio__link" href="#"
+                    <a
+                        class="portfolio__link"
+                        href="https://karinareiswich.github.io/Burger/menu.html"
                         >Cайт для доставки бургеров из ресторана.</a
                     >
                     <div class="portfolio__wrapp">
@@ -165,12 +172,14 @@
                             height="820"
                         />
                     </div>
-                    <a class="portfolio__link" href="#"
+                    <a
+                        class="portfolio__link"
+                        href="https://karinareiswich.github.io/Sedona/index.html"
                         >Учебный проект от HTML-академии.</a
                     >
                 </div>
             </section>
-            <section class="contacts">
+            <section id="contacts" class="contacts">
                 <div class="container">
                     <div class="contacts__title title">
                         <h2>Контакты</h2>
@@ -182,17 +191,46 @@
                         </p>
                     </div>
                     <div class="contacts__button">
-                        <a class="contacts__link" href="#"
+                        <a
+                            class="contacts__link"
+                            href=" https://t.me/karina_rei"
                             >Отправить сообщение</a
                         >
                     </div>
                     <div class="contacts-box">
                         <ul class="contacts__list">
                             <li class="contacts__inst">
-                                <a href="#"></a>
+                                <a
+                                    href="https://instagram.com/reiswich_?igshid=YmMyMTA2M2Y="
+                                    ><svg
+                                        width="40"
+                                        height="41"
+                                        viewBox="0 0 40 41"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M12.1663 1.29281H12.6663V1.2832H28.571C34.5356 1.2832 39.4181 6.26789 39.4181 12.3952V29.1692C39.4181 35.2968 34.5353 40.2812 28.5804 40.2812H12.1663C6.20035 40.2812 1.30981 35.3048 1.30981 29.1884V12.4048C1.30981 6.27805 6.20115 1.29281 12.1663 1.29281ZM3.31814 12.4135V12.4144V29.1981C3.31814 34.1842 7.2457 38.2148 12.1663 38.2148H28.5804C33.4836 38.2148 37.4097 34.1827 37.4097 29.1788V12.4048C37.4097 7.4006 33.4833 3.36885 28.571 3.36885H12.1663C7.25349 3.36885 3.32807 7.40093 3.31814 12.4135ZM31.4025 8.4829C31.4025 7.89297 31.8565 7.44489 32.4067 7.44489C32.9568 7.44489 33.4108 7.89297 33.4108 8.4829C33.4108 9.07283 32.9568 9.52092 32.4067 9.52092C31.8565 9.52092 31.4025 9.07283 31.4025 8.4829ZM10.3442 20.787C10.3442 15.1313 14.8689 10.5209 20.3733 10.5209C25.8778 10.5209 30.4025 15.1313 30.4025 20.787C30.4025 26.4428 25.8778 31.0532 20.3733 31.0532C14.8689 31.0532 10.3442 26.4428 10.3442 20.787ZM28.3942 20.787C28.3942 16.2534 24.834 12.597 20.3733 12.597C15.9127 12.597 12.3525 16.2534 12.3525 20.787C12.3525 25.3206 15.9127 28.9771 20.3733 28.9771C24.834 28.9771 28.3942 25.3206 28.3942 20.787Z"
+                                            fill="#070707"
+                                            stroke="#070707"
+                                        />
+                                    </svg>
+                                </a>
                             </li>
                             <li class="contacts__telegram">
-                                <a href="#"></a>
+                                <a href="https://t.me/karina_rei">
+                                    <svg
+                                        fill="#000000"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 50 50"
+                                        width="40px"
+                                        height="40px"
+                                    >
+                                        <path
+                                            d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"
+                                        />
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -202,5 +240,54 @@
         <footer>
             <div class="container"></div>
         </footer>
+
+        <!-- Mobile menu -->
+        <div id="mobile" class="mobile">
+            <ul class="mobile__list">
+                <li class="mobile__item">
+                    <a href="#box">Главная</a>
+                </li>
+                <li class="mobile__item">
+                    <a href="#about">Обо мне</a>
+                </li>
+                <li class="mobile__item"><a href="#skills">Навыки</a></li>
+                <li class="mobile__item">
+                    <a href="#portfolio">Портфолио</a>
+                </li>
+                <li class="mobile__item">
+                    <a href="#contacts">Контакты</a>
+                </li>
+            </ul>
+            <button class="burger__close" onclick="closeModal()"></button>
+        </div>
+
+        <script>
+            /* Menu */
+
+            function openModal() {
+                document.getElementById("mobile").style.top = "0px";
+            }
+
+            function closeModal() {
+                document.getElementById("mobile").style.top = "-800px";
+            }
+
+            /* Scroll */
+
+            const links = document.querySelectorAll(".scroll");
+
+            for (const link of links) {
+                link.addEventListener("click", clickHandler);
+            }
+
+            function clickHandler(e) {
+                e.preventDefault();
+                const href = this.getAttribute("href");
+
+                document.querySelector(href).scrollIntoView({
+                    behavior: "smooth",
+                });
+            }
+        </script>
     </body>
 </html>
