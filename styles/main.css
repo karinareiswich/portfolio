@@ -111,9 +111,15 @@ h1 {
 }
 
 .about {
-    margin: 120px 0;
+    margin-top: 120px;
+    margin-bottom: 70px;
     background-color:#FFF5EE;
     text-align: center;
+}
+
+.about__link {
+    color: #b22222;
+    text-transform: uppercase;
 }
 
 .wrapper {
@@ -249,7 +255,7 @@ h1 {
 }
 
 .portfolio__link:hover {
-    color: #828282;
+    color: #8B0000;
 }
 
 .contacts {
@@ -325,7 +331,7 @@ h1 {
 
 .mobile {
     max-width: 300px;
-    background: #FFE4E1;
+    background: #FFFAFA;
     text-align: left;
     position: fixed;
     margin: 20px auto 0;
@@ -341,14 +347,14 @@ h1 {
 }
 
 .mobile__item {
-    padding-bottom: 16px;
+    padding-bottom: 9px;
 }
 
 .mobile__item a {
 
     line-height: 52px;
     color: #b22222;
-    font-size: 34px;
+    font-size: 27px;
     text-decoration: none;
 }
 
