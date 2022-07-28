@@ -122,6 +122,10 @@ h1 {
     text-transform: uppercase;
 }
 
+.about__link:hover {
+    color: #8B0000;
+}
+
 .wrapper {
     padding: 0 15px;
 }
