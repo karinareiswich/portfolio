@@ -325,7 +325,7 @@ h1 {
 /* Mobile menu*/
 
 .burger__menu {
-    background-image: url(/images/burger-menu.svg);
+    background-image: url(../images/burger-menu.svg);
     border: 0;
     width: 29px;
     height: 20px;
