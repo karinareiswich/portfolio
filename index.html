@@ -17,15 +17,33 @@
 
     <body>
         <header>
-            <div class="container">
+            <div id="box">
+                <div class="box__img">
+                    <img
+                        class="page__img"
+                        src="images/avatar.png"
+                        alt="aboutme"
+                        width="320"
+                        height="150"
+                    />
+                </div>
+                <div class="box">
+                    <div class="box__name">
+                        <h1>Карина Рейзвих</h1>
+                    </div>
+                    <div class="box__text">
+                        <p>Frontend developer | Санкт-Петербург</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__nav">
                 <nav class="navigation">
-                    <button class="burger__menu" onclick="openModal()"></button>
                     <ul class="navigation__list">
                         <li class="navigation__item">
                             <a href="#box">Главная</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#about">Обо мне</a>
+                            <a href="#about">Обо&nbsp;мне</a>
                         </li>
                         <li class="navigation__item">
                             <a href="#skills">Навыки</a>
@@ -41,36 +59,6 @@
             </div>
         </header>
         <main>
-            <section>
-                <div id="box" class="container">
-                    <div class="box">
-                        <div class="box__name">
-                            <h1>
-                                Карина <br />
-                                Рейзвих
-                            </h1>
-                        </div>
-                        <div class="box__text">
-                            <p>
-                                Junior Frontend-разработчик |<br />
-                                30 лет, Санкт-Петербург.
-                            </p>
-                        </div>
-                        <div>
-                            <a href="#portfolio" class="box__arrow scroll"></a>
-                        </div>
-                    </div>
-                    <div class="box__img">
-                        <img
-                            class="page__img"
-                            src="images/aboutme.jpg"
-                            alt="aboutme"
-                            width="960"
-                            height="565"
-                        />
-                    </div>
-                </div>
-            </section>
             <section id="about" class="about">
                 <div class="wrapper">
                     <div class="about__title title">
@@ -78,7 +66,7 @@
                     </div>
                     <div class="about__text text">
                         <p>
-                            Привет, я Карина - Junior Frontend-разработчик из
+                            Привет, я Карина - Frontend-разработчик из
                             Санкт-Петербурга. <br />
                             Интересуюсь Frontend-разработкой и всем, что с ней
                             связано.
@@ -92,7 +80,7 @@
                                 href="https://cloud.mail.ru/public/2jWF/HWyQ5r2y2"
                                 >сертификаты</a
                             >
-                            и небольшое
+                            и
                             <a class="about__link" href="#portfolio"
                                 >портфолио</a
                             >.
@@ -150,23 +138,24 @@
                 <div class="portfolio__box">
                     <a
                         class="portfolio__link"
-                        href="https://karinareiswich.github.io/gym/index.html"
+                        href="https://karinareiswich.github.io/nura_elite/index.html"
                     >
+                        <h3>Сайт для нового жилого комплекса</h3>
                         <div class="portfolio__wrapp">
                             <img
                                 class="portfolio__img"
-                                src="images/gym.png"
-                                alt="gym"
+                                src="images/Nursultan.png"
+                                alt="Nursultan"
                                 width="936"
                                 height="820"
                             />
                         </div>
-                        Адаптивный сайт для услуг небольшой фитнес студии.
                     </a>
                     <a
                         class="portfolio__link"
                         href="https://karinareiswich.github.io/Burger/menu.html"
                     >
+                        <h3>Доставка бургеров из ресторана</h3>
                         <div class="portfolio__wrapp">
                             <img
                                 class="portfolio__img"
@@ -176,22 +165,21 @@
                                 height="820"
                             />
                         </div>
-                        Cайт для доставки бургеров из ресторана.
                     </a>
                     <a
                         class="portfolio__link"
-                        href="https://karinareiswich.github.io/Sedona/index.html"
+                        href="https://karinareiswich.github.io/gym/index.html"
                     >
+                        <h3>Услуги не большой фитнес студии</h3>
                         <div class="portfolio__wrapp">
                             <img
                                 class="portfolio__img"
-                                src="images/sedona.png"
-                                alt="sedona"
+                                src="images/gym.png"
+                                alt="gym"
                                 width="936"
                                 height="820"
                             />
                         </div>
-                        Учебный проект от HTML-академии.
                     </a>
                 </div>
             </section>
@@ -274,27 +262,5 @@
         <footer>
             <div class="container"></div>
         </footer>
-
-        <!-- Mobile menu -->
-        <div id="mobile" class="mobile">
-            <ul class="mobile__list">
-                <li class="mobile__item">
-                    <a href="#box">Главная</a>
-                </li>
-                <li class="mobile__item">
-                    <a href="#about">Обо мне</a>
-                </li>
-                <li class="mobile__item"><a href="#skills">Навыки</a></li>
-                <li class="mobile__item">
-                    <a href="#portfolio">Портфолио</a>
-                </li>
-                <li class="mobile__item">
-                    <a href="#contacts">Контакты</a>
-                </li>
-            </ul>
-            <button class="burger__close" onclick="closeModal()"></button>
-        </div>
-
-        <script src="index.js" defer></script>
     </body>
 </html>

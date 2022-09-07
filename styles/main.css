@@ -4,6 +4,11 @@ body {
 
 }
 
+h1 {
+    font-size: 47px;
+    margin: 0.67em 0;
+}
+
 h2 {
     color: #b22222;
     display: block;
@@ -22,20 +27,24 @@ p {
 }
 
 .container {
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+
+.container__nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
-
 }
 
 .navigation {
-    padding: 25px 0 25px 0;
-    border-bottom: 1px solid #828282;
+    padding: 45px 0 25px 0;
+
 }
 
 .navigation__list {
     padding-left: 0;
-    gap: 8vw;
+    gap: 6vw;
     display: flex;
     justify-content: space-between;
 }
@@ -63,11 +72,12 @@ p {
 }
 
 .box {
-    max-width: 943px;
-    padding-top: 40px;
+    position: relative;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -77,21 +87,10 @@ h1 {
 
 .box__text {
     display: block;
-    font-size: 21px;
+    font-size: 30px;
+    font-weight: 800;
     line-height: 31px;
     color: #b22222;
-}
-
-.box__arrow {
-    background-image: url(../images/arrow.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 54px;
-    height: 52px;
-    display: block;
-    left: 50px;
-    bottom: 10px;
-    transition: .3s;
 }
 
 .box__arrow:hover {
@@ -99,6 +98,10 @@ h1 {
 }
 
 .box__img {
+    background-image: url(../images/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,13 +110,12 @@ h1 {
 
 .page__img {
     object-fit: contain;
-    height: 62vh;
+    height: 37vh;
 }
 
 .about {
-    margin-top: 120px;
     margin-bottom: 70px;
-    background-color:#FFF5EE;
+    background-color: #FFF5EE;
     text-align: center;
 }
 
@@ -137,7 +139,7 @@ h1 {
 }
 
 .about__title {
-    padding: 120px 0 40px 0;
+    padding: 85px 0 40px 0;
 }
 
 .text {
@@ -233,11 +235,11 @@ h1 {
 }
 
 .portfolio__title {
-    padding: 112px 0 30px 0;
+    padding: 112px 0 70px 0;
 }
 
 .portfolio__wrapp {
-    padding: 55px;
+    padding: 15px 55px 70px 55px;
 }
 
 .portfolio__img {
@@ -247,7 +249,6 @@ h1 {
 }
 
 .portfolio__img:hover {
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
 }
 
@@ -322,63 +323,6 @@ h1 {
     transform: scale(1.3);
 }
 
-/* Mobile menu*/
-
-.burger__menu {
-    background-image: url(../images/burger-menu.svg);
-    border: 0;
-    width: 29px;
-    height: 20px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.mobile {
-    max-width: 300px;
-    background: #FFFAFA;
-    text-align: left;
-    position: fixed;
-    margin: 20px auto 0;
-    left: 0;
-    transition: 0.5s;
-    padding: 14px 50px 37px 20px;
-}
-
-.mobile__list {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.mobile__item {
-    padding-bottom: 9px;
-}
-
-.mobile__item a {
-
-    line-height: 52px;
-    color: #b22222;
-    font-size: 27px;
-    text-decoration: none;
-}
-
-.mobile__item a:hover {
-    color: #8B0000;
-}
-
-.burger__close {
-    width: 22px;
-    height: 22px;
-    background-color: transparent;
-    background-image: url(../images/close.svg);
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
 
 @media (max-width:766px) {
     h1 {
@@ -397,8 +341,13 @@ h1 {
         display: none;
     }
 
+
     .page__img {
+        position: relative;
+        top: 12px;
         height: 33vh;
+        width: 190px;
+
     }
 }
 
@@ -437,7 +386,7 @@ h1 {
     }
 
     .about {
-        margin: 88px 0;
+        margin: 30px 0;
     }
 
     .portfolio__title {
@@ -452,7 +401,7 @@ h1 {
         padding: 40px 30px;
     }
 
-    .contacts { 
+    .contacts {
         padding-bottom: 50px;
     }
 
@@ -467,16 +416,38 @@ h1 {
 
 
 @media (max-width:395px) {
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .navigation {
+        padding: 0;
+    }
+
     .about__title {
         padding: 72px 0 40px 0;
+    }
+
+    .box__text {
+        font-size: 29px;
     }
 
     .text {
         font-size: 15px;
     }
 
-    .about {
-        margin: 73px 0;
+
+    .about__title {
+        padding: 25px 0 40px 0;
+    }
+
+    .skills {
+        margin-bottom: 27px;
+    }
+
+    .portfolio {
+        padding: 0;
     }
 
     .portfolio__link {
@@ -489,6 +460,6 @@ h1 {
 
     .portfolio__title {
         padding-top: 80px;
-        padding-bottom: 0;
+        padding-bottom: 23px;
     }
 }
