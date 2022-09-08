@@ -97,6 +97,12 @@ h1 {
     transform: scale(1.2);
 }
 
+.container__box {
+    position: relative;
+}
+
+
+
 .box__img {
     background-image: url(../images/fon.jpg);
     background-repeat: no-repeat;
@@ -109,6 +115,7 @@ h1 {
 }
 
 .page__img {
+    
     object-fit: contain;
     height: 37vh;
 }
@@ -446,20 +453,32 @@ h1 {
         margin-bottom: 27px;
     }
 
+    .skills__title {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
     .portfolio {
         padding: 0;
+    }
+
+    .portfolio__wrapp {
+        padding: 19px 30px;
     }
 
     .portfolio__link {
         font-size: 14px;
     }
 
-    .contacts__link {
-        font-size: 15px;
+    .contacts__list {
+        gap: 7vw;
     }
 
-    .portfolio__title {
-        padding-top: 80px;
-        padding-bottom: 23px;
+    .contacts__title {
+        padding-top: 65px;
+    }
+
+    .contacts__link {
+        font-size: 15px;
     }
 }
