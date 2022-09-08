@@ -97,12 +97,6 @@ h1 {
     transform: scale(1.2);
 }
 
-.container__box {
-    position: relative;
-}
-
-
-
 .box__img {
     background-image: url(../images/fon.jpg);
     background-repeat: no-repeat;
@@ -111,11 +105,11 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    
 }
 
 .page__img {
-    
+    z-index: 1;
     object-fit: contain;
     height: 37vh;
 }
