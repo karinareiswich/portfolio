@@ -325,7 +325,7 @@ h1 {
 }
 
 
-@media (max-width:766px) {
+@media (max-width:769px) {
     h1 {
         text-align: center;
     }
@@ -334,22 +334,20 @@ h1 {
         max-width: none;
     }
 
+
     .box {
         flex-direction: column;
+        align-items: center;
     }
 
     .box__arrow {
         display: none;
     }
 
-
-    .page__img {
-        position: relative;
-        top: 12px;
-        height: 33vh;
-        width: 190px;
-
+    .contacts__list {
+        gap: 6vw;
     }
+
 }
 
 @media (max-width:719px) {
@@ -369,14 +367,6 @@ h1 {
 }
 
 
-@media (min-width:566px) {
-
-    .burger__menu {
-        display: none;
-    }
-}
-
-
 @media (max-width:565px) {
     .container {
         padding: 0 18px 0 18px;
@@ -384,6 +374,11 @@ h1 {
 
     .title {
         font-size: 28px;
+    }
+
+    .page__img {
+        height: 30vh;
+        width: 250px;
     }
 
     .about {
@@ -424,6 +419,10 @@ h1 {
 
     .navigation {
         padding: 0;
+    }
+    .page__img {
+        height: 34vh;
+        width: 200px;
     }
 
     .about__title {
