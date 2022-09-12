@@ -118,7 +118,7 @@ h1 {
     position: relative;
     overflow-x: hidden;
     top: 32px;
-    height: 30vh;
+    height: 30%;
 }
 
 .about {
@@ -342,7 +342,7 @@ h1 {
     }
 
     .page__img {
-        height: 35vh;
+        height: 35%;
     }
 
     .box {
@@ -388,8 +388,9 @@ h1 {
     }
 
     .page__img {
+
         top: 16px;
-        height: 26vh;
+        height: 26%;
         width: 45vw;
     }
 
@@ -441,7 +442,8 @@ h1 {
         padding: 0;
     }
     .page__img {
-        height: 21vh;
+
+        height: 21%;
         
     }
 
