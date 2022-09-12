@@ -100,18 +100,28 @@ h1 {
 .box__img {
     background-image: url(../images/fon.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
+    background-size: cover;
+    background-position: center center;
+    /*
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
     
 }
 
+.box__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .page__img {
+    position: relative;
+    top: 42px;
     z-index: 1;
     object-fit: contain;
-    height: 37vh;
+    height: 30vh;
 }
 
 .about {
@@ -334,8 +344,12 @@ h1 {
         max-width: none;
     }
 
+    .page__img {
+        height: 35vh;
+    }
 
     .box {
+        padding: 23px 15px;
         flex-direction: column;
         align-items: center;
     }
@@ -377,12 +391,17 @@ h1 {
     }
 
     .page__img {
-        height: 30vh;
+        top: 16px;
+        height: 26vh;
         width: 250px;
     }
 
     .about {
         margin: 30px 0;
+    }
+
+    .about__title {
+        padding: 53px 0 40px 0;
     }
 
     .portfolio__title {
@@ -405,6 +424,10 @@ h1 {
         padding: 80px 0 50px 0;
     }
 
+    .navigation {
+        padding: 0;
+    }
+
     .navigation__list {
         display: none;
     }
@@ -421,12 +444,16 @@ h1 {
         padding: 0;
     }
     .page__img {
-        height: 34vh;
+        height: 22vh;
         width: 200px;
     }
 
     .about__title {
         padding: 72px 0 40px 0;
+    }
+
+    .box {
+        padding: 6px 15px;
     }
 
     .box__text {
