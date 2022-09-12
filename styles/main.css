@@ -444,8 +444,8 @@ h1 {
         padding: 0;
     }
     .page__img {
-        height: 22vh;
-        width: 200px;
+        height: 21vh;
+        width: 45vw;
     }
 
     .about__title {
