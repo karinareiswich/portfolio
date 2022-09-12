@@ -393,7 +393,7 @@ h1 {
     .page__img {
         top: 16px;
         height: 26vh;
-        width: 250px;
+        width: 45vw;
     }
 
     .about {
@@ -445,7 +445,7 @@ h1 {
     }
     .page__img {
         height: 21vh;
-        width: 45vw;
+        
     }
 
     .about__title {
