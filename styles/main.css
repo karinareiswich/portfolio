@@ -15,10 +15,6 @@ h2 {
     margin: 0;
 }
 
-h2:hover {
-    color: #8B0000;
-}
-
 p {
     display: block;
     text-align: center;
@@ -55,7 +51,7 @@ p {
 
 .navigation__item a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 22px;
     color: #b22222;
@@ -75,10 +71,10 @@ p {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 70px 15px 0;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -88,9 +84,9 @@ h1 {
 .box__text {
     display: block;
     font-size: 30px;
-    font-weight: 800;
-    line-height: 31px;
-    color: #b22222;
+    font-weight: 400;
+    line-height: 30px;
+    color: #070707;
 }
 
 .box__arrow:hover {
@@ -102,7 +98,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    
+
 }
 
 .box__wrapper {
@@ -114,11 +110,12 @@ h1 {
 
 .page__img {
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     position: relative;
-    overflow-x: hidden;
-    top: 32px;
+    top: 60px;
     height: 30%;
+    border: 7px solid #ffffff;
+    border-radius: 50%;
 }
 
 .about {
@@ -152,7 +149,7 @@ h1 {
 
 .text {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 26px;
     color: #070707;
 
 }
@@ -332,6 +329,8 @@ h1 {
 }
 
 
+/* Responsive */
+
 @media (max-width:769px) {
     h1 {
         text-align: center;
@@ -346,13 +345,9 @@ h1 {
     }
 
     .box {
-        padding: 23px 15px;
+        padding: 70px 15px 0;
         flex-direction: column;
         align-items: center;
-    }
-
-    .box__arrow {
-        display: none;
     }
 
     .contacts__list {
@@ -388,7 +383,6 @@ h1 {
     }
 
     .page__img {
-
         top: 16px;
         height: 26%;
         width: 45vw;
@@ -431,6 +425,16 @@ h1 {
     }
 }
 
+@media (max-width:440px) {
+    .box {
+        padding: 48px 15px 0;
+    }
+
+    .page__img {
+        top: 50px;
+    }
+}
+
 
 @media (max-width:395px) {
 
@@ -441,10 +445,11 @@ h1 {
     .navigation {
         padding: 0;
     }
-    .page__img {
 
+    .page__img {
+        top: 28px;
         height: 21%;
-        
+
     }
 
     .about__title {
@@ -452,7 +457,7 @@ h1 {
     }
 
     .box {
-        padding: 6px 15px;
+        padding: 22px 15px 0;
     }
 
     .box__text {
